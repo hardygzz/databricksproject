@@ -75,19 +75,23 @@ El objetivo es analizar la morosidad de las Cajas Municipales (CMAC) para los a�
 
 # 🥈 Silver Layer
 Dataset 1 – Morosidad por Días (Wide)
-Tabla:
-    silver_morosidad_dias_wide
+    
+    Tabla:
+        silver_morosidad_dias_wide
 
 Transformaciones:
+
     Filtrado por CMAC
     Limpieza de valores
     Conversión a tipo numérico
 
 Dataset 2 – Morosidad por Tipo (Long)
-Tabla:
-    silver_morosidad_tipo_long
+    
+    Tabla:
+        silver_morosidad_tipo_long
 
 Transformaciones:
+
     Detección dinámica del header 
     Limpieza de conceptos
     Eliminación de filas informativas
@@ -98,11 +102,11 @@ Transformaciones:
 
 Modelo analítico listo para consumo:
 
-1️⃣ Tabla Long Analítica
-    gold_morosidad_tipo_long
-        
-2️⃣ Tabla Pivot para BI
-    gold_morosidad_tipo_pivot
+    1️⃣ Tabla Long Analítica
+        gold_morosidad_tipo_long
+            
+    2️⃣ Tabla Pivot para BI
+        gold_morosidad_tipo_pivot
     
 Pivot por concepto 
 246 filas finales 
@@ -158,4 +162,54 @@ ncluye:
     Storage credentials
     Configuración Managed Identity
 
+# 🚀 CI/CD
 
+Pipeline ubicado en:
+
+    .github/workflow/
+
+Incluye:
+
+    Validación del código
+    Deploy automático
+    Ejecución de bundle / notebooks
+    Integración con Databricks
+
+# 📈 Resultados
+
+    ✔ 2 datasets procesados
+    ✔ Arquitectura Medallion implementada
+    ✔ Uso exclusivo de Managed Identity
+    ✔ 2 años procesados (2024–2025)
+    ✔ 22 conceptos detectados
+    ✔ 11 CMAC procesadas
+    ✔ Modelo Gold listo para BI
+    ✔ Dashboard implementado
+
+# 📌 Consideraciones Técnicas
+
+    ETL desarrollado 100% en PySpark
+    No se utiliza DBFS como raw
+    No se utilizan Volumes
+    Unity Catalog habilitado
+    Modelo preparado para escalabilidad futura
+
+# 📎 Entregable Final
+
+Repositorio público de GitHub que contiene:
+
+    Código ETL
+    Arquitectura
+    Dashboard
+    CI/CD
+    Evidencias
+    Scripts de seguridad
+    Scripts de reversión
+
+# 👨‍💻 Autor
+
+Proyecto desarrollado como parte del curso de Ingeniería de Datos con Databricks.
+
+By: HardyGzz
+
+Data Engineering | Azure Databricks | Delta Lake | CI/CD
