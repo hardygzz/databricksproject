@@ -108,5 +108,54 @@ Pivot por concepto
 246 filas finales 
 Dataset listo para visualización
 
+# 📊 Dashboard
+
+Se construyó un Dashboard en Databricks SQL que incluye:
+        
+        Evolución temporal de morosidad por CMAC
+        Comparación por tipo de crédit
+        Top CMAC con mayor morosidad
+        Análisis por modalidad
+
+Archivos relacionados disponibles en:
+
+        dashboard/
+
+# 🔐 Seguridad
+Scripts ubicados en: SEGURIDAD/
+Incluyen:
+
+        Creación de esquemas
+        GRANT SELECT sobre tablas Gold
+        Asignación a usuarios/grupos
+        
+Ejemplo:
+
+        GRANT SELECT ON TABLE sbsrisk_dev.gold.gold_morosidad_tipo_pivot TO `analistas`;
+
+# 🔁 Reversión
+Ubicado en:
+
+        REVERSION/
+
+Incluye scripts DROP:
+
+        DROP TABLE IF EXISTS sbsrisk_dev.gold.gold_morosidad_tipo_pivot;
+        DROP TABLE IF EXISTS sbsrisk_dev.silver.silver_morosidad_tipo_long;
+        DROP TABLE IF EXISTS sbsrisk_dev.bronze.bronze_sbs_morosidad_2024;
+
+# ⚙️ Preparación de Ambiente
+
+Ubicado en:
+
+        PrepaMB/
+
+ncluye:
+
+    Creación de catalog
+    Creación de schemas
+    External locations
+    Storage credentials
+    Configuración Managed Identity
 
 
