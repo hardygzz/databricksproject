@@ -88,7 +88,7 @@ Tabla:
     silver_morosidad_tipo_long
 
 Transformaciones:
-    Detección dinámica del header
+    Detección dinámica del header 
     Limpieza de conceptos
     Eliminación de filas informativas
     Unpivot dinámico
@@ -99,13 +99,13 @@ Transformaciones:
 Modelo analítico listo para consumo:
 
 1️⃣ Tabla Long Analítica
-        gold_morosidad_tipo_long
+    gold_morosidad_tipo_long
         
 2️⃣ Tabla Pivot para BI
-        gold_morosidad_tipo_pivot
+    gold_morosidad_tipo_pivot
     
-Pivot por concepto
-246 filas finales
+Pivot por concepto 
+246 filas finales 
 Dataset listo para visualización
 
 
