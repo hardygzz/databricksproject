@@ -97,14 +97,16 @@ Transformaciones:
 # 🥇 Gold Layer
 
 Modelo analítico listo para consumo:
-    1️⃣ Tabla Long Analítica
-        gold_morosidad_tipo_long
-    2️⃣ Tabla Pivot para BI
-        gold_morosidad_tipo_pivot
 
-    Pivot por concepto
-    246 filas finales
-    Dataset listo para visualización
+1️⃣ Tabla Long Analítica
+        gold_morosidad_tipo_long
+        
+2️⃣ Tabla Pivot para BI
+        gold_morosidad_tipo_pivot
+    
+Pivot por concepto
+246 filas finales
+Dataset listo para visualización
 
 
 
